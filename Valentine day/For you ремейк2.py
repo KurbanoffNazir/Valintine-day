@@ -33,13 +33,13 @@ title_label = tk.Label(root, text="Will you be my Valentine?", font=("Helvetica"
 title_label.pack(pady=20)
 
 # Кнопка "Yes"
-yes_button = tk.Button(root, text="Yes", command=yes_response, bg="#98fb98", font=("Helvetica", 12), width=10)
+yes_button = tk.Button(root, text="Yes", command=yes_response, bg="#98fb98", activebackground="#98fb98", font=("Helvetica", 12), width=10)
 yes_button.pack(side=tk.LEFT, padx=20)
 
 # Кнопка "No"
-no_button = tk.Button(root, text="No", command=no_response, bg="#ff7f50", font=("Helvetica", 12), width=10)
+no_button = tk.Button(root, text="No", command=no_response, bg="#ff7f50", activebackground="#ff7f50", font=("Helvetica", 12), width=10)
 no_button.pack(side=tk.RIGHT, padx=20)
-
+            
 # Привязываем движение кнопки "No" к движению мыши
 no_button.bind("<Enter>", move_no_button)
 
